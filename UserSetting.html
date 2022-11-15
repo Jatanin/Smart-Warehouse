@@ -1,0 +1,473 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>JectFinal</title>
+</head>
+
+<body id="page-top" class="modal-open" style="font-family: Exo, sans-serif;">
+    <div id="contentWrapper">
+        <div id="content">
+            <div class="container-fluid">
+                <div id="modalSetting" class="modal fade show" role="dialog" tabindex="-1" data-toggle="modal" style="display: block;">
+                    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <form>
+                                <div class="modal-header">
+                                    <h4 class="modal-title">User Details</h4><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="col-2 text-right"><label class="text-nowrap"><span style="color: rgb(4, 4, 4);">Name</span></label>
+                                                <div class="form-row" style="margin: 0px;margin-right: 0px;padding: 5px;">
+                                                    <div class="col"><label class="col-form-label text-nowrap"><span style="color: rgb(4, 4, 4);">ID</span></label></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4"><input class="form-control" type="text" value />
+                                                <div class="form-row" style="margin: 0px;margin-right: 0px;padding: 5px;">
+                                                    <div class="col"><input class="form-control" type="text" value readonly /></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2 text-right"><label class="text-nowrap"><span style="color: rgb(0, 0, 0);">Lastname</span></label>
+                                                <div class="form-row" style="margin: 0px;margin-right: 0px;padding: 5px;">
+                                                    <div class="col"><label class="col-form-label text-nowrap"><span style="color: rgb(0, 0, 0);">Email</span></label></div>
+                                                </div>
+                                            </div>
+                                            <div class="col"><input class="form-control" type="text" value />
+                                                <div class="form-row" style="margin: 0px;margin-right: 0px;padding: 5px;">
+                                                    <div class="col"><input class="form-control" type="email" value /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="col-2 text-right"><label class="col-form-label text-nowrap"><span style="color: rgb(0, 0, 0);">Department</span></label></div>
+                                            <div class="col-4"><input class="form-control" type="search" required /></div>
+                                            <div class="col-2 text-right"><label class="col-form-label text-nowrap"><span style="color: rgb(0, 0, 0);">Position</span></label></div>
+                                            <div class="col-4"><input class="form-control" type="search" value /></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <div class="form-row">
+                                                        <div class="col-2 text-right"><label class="col-form-label text-nowrap"><span style="color: rgb(0, 0, 0);">Tel.</span></label></div>
+                                                        <div class="col-4"><input class="form-control" type="tel" placeholder="Phone No." /></div>
+                                                        <div class="col-2 text-right"><label class="col-form-label text-nowrap"><span style="color: rgb(0, 0, 0);">Note</span></label></div>
+                                                        <div class="col-4"><textarea class="form-control"></textarea></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button class="btn btn-primary" type="submit">Save</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="modalDeleteConfirm" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Confirm Delete</h4><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <p>Are you sure to delete?</p><input type="text" readonly disabled />
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-secondary" type="button" data-dismiss="modal">No</button><button class="btn btn-danger" type="button">Yes</button></div>
+                        </div>
+                    </div>
+                </div>
+                <header>
+                    <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navbar--apple">
+                        <div class="container"><button class="navbar-toggler" data-toggle="collapse"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><i class="la la-navicon"></i></span></button>
+                            <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navbar--apple" style="margin-top: -5px;">
+                                <div class="container"><button class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><i class="la la-navicon"></i></span></button>
+                                    <div id="menu" class="collapse navbar-collapse">
+                                        <ul class="navbar-nav flex-grow-1 justify-content-between">
+                                            <li class="nav-item d-none d-xs-block d-md-block"><a class="nav-link" href="index.html"><i class="fa fa-cubes apple-logo"></i></a></li>
+                                            <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home mr-2"></i>Home</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="PickingPlan.html"><i class="fa fa-th-list mr-2" style="font-size: 14px;"></i>Picking Plan</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="PickingList.html"><i class="fa fa-th-list mr-2"></i>Picking List</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="UserSetting.html"><i class="fa fa-cogs mr-2"></i>Setting</a></li>
+                                            <li class="nav-item d-none d-xs-block d-md-block"><a class="nav-link" href="#"><i class="icon ion-ios-search-strong"></i></a></li>
+                                            <li class="nav-item dropdown" style="margin-right: 64px;"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#" style="margin-right: 190px;"><i class="fa fa-user-circle mr-2"></i>Master</a>
+                                                <div class="dropdown-menu"><a id="dropdown-client-1" class="dropdown-item" href="MasterClient.html">MasterClient</a><a id="dropdown-client-2" class="dropdown-item" href="MasterEmployee.html">MasterEmployee</a><a id="dropdown-client-3" class="dropdown-item" href="MasterProducts.html">MasterItems</a></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="row" style="margin: 0px;margin-right: 0px;padding: 5px;">
+                                        <div class="col" href="Login.html"><button id="btn-logout" class="btn btn-primary" role="button" style="margin-top: -9px;margin-left: -10px;margin-right: -50px;"><i class="fa fa-sign-out"></i>Log Out</button></div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </nav>
+                    <div class="card" style="margin-top: 64px;padding-top: 4px;">
+                        <div id="card-body-setting-usersetting" class="card-body">
+                            <h4 id="modal-head" class="card-title" style="padding-left: 0px;padding-right: 0px;padding-bottom: 0px;padding-top: 0px;margin-top: -10px;margin-right: 941px;"><i class="fa fa-users mr-2"></i>User Setting</h4>
+                        </div>
+                    </div>
+                </header>
+                <div class="row">
+                    <div class="col">
+                        <div id="collapsePlanSelect" class="my-2" style="background: rgba(46,48,137,255);padding: 5px;border-radius: 9px;"><a class="btn btn-info" data-toggle="collapse" aria-expanded="true" aria-controls="contentPlanSelect" href="#contentPlanSelect" role="button" style="margin-right: 1024px;margin-left: 21px;margin-top: -4px;"><i class="fa fa-user mx-1"></i>User List</a>
+                            <div id="contentPlanSelect" class="collapse show">
+                                <div class="card mb-3 shadow" style="margin-top: 43px;">
+                                    <div id="card-body-setting" class="card-body" style="margin-top: 4px;">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="col"><a id="btn-add" class="btn btn-primary btn-lg btn btn-primaryf float-right" role="button" data-toggle="modal" href="#modalSetting">Add User</a></div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="table-responsive table mt-2" style="font-size: 13px;">
+                                                        <table id="tbUserList" class="table table-striped table-hover table-sm my-0 display">
+                                                            <thead style="background: rgb(226,252,255);">
+                                                                <tr class="text-center">
+                                                                    <th class="table-head">Index</th>
+                                                                    <th class="table-head">Username</th>
+                                                                    <th class="table-head">Password</th>
+                                                                    <th class="table-head">ID</th>
+                                                                    <th class="table-head">First Name</th>
+                                                                    <th class="table-head">Last name</th>
+                                                                    <th class="table-head">Email</th>
+                                                                    <th class="table-head">Department</th>
+                                                                    <th class="table-head">Position</th>
+                                                                    <th class="table-head">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody class="text-center">
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Username01<br /></td>
+                                                                    <td>1111111<br /></td>
+                                                                    <td>001</td>
+                                                                    <td>Mister A</td>
+                                                                    <td>AAAA</td>
+                                                                    <td>A@Email.com</td>
+                                                                    <td>Plan</td>
+                                                                    <td>Manage</td>
+                                                                    <td class="p-1" style="margin-bottom: 13px;padding-bottom: 0px;padding-top: 18px;">
+                                                                        <div class="form-row" style="margin: 0px;margin-right: 0px;padding: 5px;">
+                                                                            <div class="col"><a id="btn-edit-1" class="btn btn-primary btn-lg btn btn-info p-1" role="button" data-toggle="modal" href="#modalSetting" style="margin-bottom: 12px;padding-top: 4px;"><i class="fa fa-edit mr-2" style="padding-bottom: 1px;padding-right: 0px;"></i>EDIT</a></div>
+                                                                        </div>
+                                                                        <div>
+                                                                            <div id="myModal" class="modal fade" role="dialog" tabindex="-1">
+                                                                                <div class="modal-dialog" role="document">
+                                                                                    <div class="modal-content">
+                                                                                        <div class="modal-header">
+                                                                                            <h4 id="modal-head">Edit Users</h4><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                                        </div>
+                                                                                        <div class="modal-body">
+                                                                                            <div class="modal-body">
+                                                                                                <div class="form-row my-2">
+                                                                                                    <div class="col justify-content-xl-end align-items-xl-center">
+                                                                                                        <div class="form-group"><input class="form-control" type="text" required placeholder="Username" /></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="form-row my-2">
+                                                                                                    <div class="col justify-content-xl-end align-items-xl-center">
+                                                                                                        <div class="form-group"><input class="form-control" type="password" required placeholder="Password" /></div>
+                                                                                                    </div>
+                                                                                                    <div class="col justify-content-xl-end align-items-xl-center">
+                                                                                                        <div class="form-group"><input class="form-control" type="password" required placeholder="Repeat Password" /></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="form-row my-2">
+                                                                                                    <div class="col justify-content-xl-end align-items-xl-center">
+                                                                                                        <div class="form-group"><input class="form-control" type="text" required placeholder="UserID" /></div>
+                                                                                                    </div>
+                                                                                                    <div class="col justify-content-xl-end align-items-xl-center">
+                                                                                                        <div class="form-group"><input class="form-control" type="email" placeholder="Email" /></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="form-row my-2">
+                                                                                                    <div class="col justify-content-xl-end align-items-xl-center">
+                                                                                                        <div class="form-group"><input class="form-control" type="text" required placeholder="First Name" /></div>
+                                                                                                    </div>
+                                                                                                    <div class="col justify-content-xl-end align-items-xl-center">
+                                                                                                        <div class="form-group"><input class="form-control" type="text" required placeholder="Last name" /></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="form-row my-2">
+                                                                                                    <div class="col justify-content-xl-end align-items-xl-center">
+                                                                                                        <div class="form-group"><label>Department</label><select class="form-control">
+                                                                                                                <option value="12" selected>This is item 1</option>
+                                                                                                                <option value="13">This is item 2</option>
+                                                                                                                <option value="14">This is item 3</option>
+                                                                                                            </select></div>
+                                                                                                    </div>
+                                                                                                    <div class="col justify-content-xl-end align-items-xl-center">
+                                                                                                        <div class="form-group"><label>Position</label><select class="form-control">
+                                                                                                                <option value="12" selected>This is item 1</option>
+                                                                                                                <option value="13">This is item 2</option>
+                                                                                                                <option value="14">This is item 3</option>
+                                                                                                            </select></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal" type="button">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Username02<br /></td>
+                                                                    <td>1111111<br /></td>
+                                                                    <td>002</td>
+                                                                    <td>Mister B</td>
+                                                                    <td>Injection</td>
+                                                                    <td>B@Email.com</td>
+                                                                    <td>Engineer</td>
+                                                                    <td>Leader</td>
+                                                                    <td class="p-1" style="padding-bottom: 13px;padding-top: 24px;">
+                                                                        <div class="form-row" style="margin: 0px;margin-right: 0px;padding: 5px;">
+                                                                            <div class="col"><a id="btn-edit-1" class="btn btn-primary btn-lg btn btn-info p-1" role="button" data-toggle="modal" href="#modalSetting"><i class="fa fa-edit mr-2"></i>EDIT</a></div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Username03<br /></td>
+                                                                    <td>1111111<br /></td>
+                                                                    <td>BBBB</td>
+                                                                    <td>Mister C</td>
+                                                                    <td>CCCC</td>
+                                                                    <td>C@Email.com</td>
+                                                                    <td>Plan</td>
+                                                                    <td>Leader</td>
+                                                                    <td class="p-1">
+                                                                        <div class="form-row" style="margin: 0px;margin-right: 0px;padding: 5px;">
+                                                                            <div class="col"><a id="btn-edit-1" class="btn btn-primary btn-lg btn btn-info p-1" role="button" data-toggle="modal" href="#modalSetting"><i class="fa fa-edit mr-2"></i>EDIT</a></div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 style="font-weight: bold;text-decoration: blink;margin-right: 125px;padding-right: 866px;">User Setting</h5>
+                        <div id="collapsePlanSelect-1" class="my-2" style="background: rgba(46,48,137,255);padding: 5px;border-radius: 9px;"><a class="btn btn-info" data-toggle="collapse" aria-expanded="true" aria-controls="contentPlanSelect-1" href="#contentPlanSelect-1" role="button" style="margin-right: 1007px;margin-left: 21px;"><i class="fa fa-users mx-1"></i>User Detail</a>
+                            <div id="contentPlanSelect-1" class="collapse show">
+                                <div class="card mb-3 shadow" style="margin-top: 48px;">
+                                    <div id="card-body-setting" class="card-body" style="margin-top: 7px;">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="col-auto">
+                                                    <div class="card">
+                                                        <div id="card-setting" class="card-body">
+                                                            <div class="form-row">
+                                                                <div class="col justify-content-xl-end align-items-xl-center"><label class="col-form-label"><span style="color: rgb(0, 0, 0);">Username</span>:</label></div>
+                                                                <div class="col">
+                                                                    <div class="form-group"><input class="form-control" type="text" required placeholder="Username" /></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col"><label class="col-form-label"><span style="color: rgb(10, 10, 10);">Password</span></label></div>
+                                                                <div class="col">
+                                                                    <div class="form-group"><input class="form-control" type="password" required placeholder="Password" /></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col justify-content-xl-end align-items-xl-center"><label class="col-form-label"><span style="color: rgb(8, 8, 8);">ID</span></label></div>
+                                                                <div class="col justify-content-xl-end align-items-xl-center">
+                                                                    <div class="form-group"><input class="form-control" type="password" required placeholder="UserID" /></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col justify-content-xl-end align-items-xl-center"><label class="col-form-label"><span style="color: rgb(16, 16, 16);">First name</span></label></div>
+                                                                <div class="col justify-content-xl-end align-items-xl-center">
+                                                                    <div class="form-group"><input class="form-control" type="text" required placeholder="First Name" /></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col justify-content-xl-end align-items-xl-center"><label class="col-form-label"><span style="color: rgb(3, 3, 3);">Last name</span></label></div>
+                                                                <div class="col justify-content-xl-end align-items-xl-center">
+                                                                    <div class="form-group"><input class="form-control" type="text" required placeholder="Last name" /></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col justify-content-xl-end align-items-xl-center"><label class="col-form-label"><span style="color: rgb(20, 20, 20);">Email</span></label></div>
+                                                                <div class="col justify-content-xl-end align-items-xl-center">
+                                                                    <div class="form-group"><input class="form-control" type="email" placeholder="Email" required /></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col justify-content-xl-end align-items-xl-center"><label class="col-form-label"><span style="color: rgb(11, 11, 11);">Department</span></label></div>
+                                                                <div class="col justify-content-xl-end align-items-xl-center">
+                                                                    <div class="form-group"><select class="form-control">
+                                                                            <option value="12" selected>This is item 1</option>
+                                                                            <option value="13">This is item 2</option>
+                                                                            <option value="14">This is item 3</option>
+                                                                        </select></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col justify-content-xl-end align-items-xl-center"><label class="col-form-label"><span style="color: rgb(4, 4, 4);">Position</span></label></div>
+                                                                <div class="col justify-content-xl-end align-items-xl-center">
+                                                                    <div class="form-group"><select class="form-control">
+                                                                            <option value="12" selected>This is item 1</option>
+                                                                            <option value="13">This is item 2</option>
+                                                                            <option value="14">This is item 3</option>
+                                                                        </select></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col"><button class="btn btn-danger mx-2" type="button" data-target="#modalDeleteConfirm" data-toggle="modal"><strong>Delete User</strong></button><button id="btn-save-setting" class="btn btn-primary float-right mx-2" type="button" style="padding-right: 13px;"><strong>Save</strong></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <h5 style="font-weight: bold;text-decoration: underline;">Permission</h5>
+                                                    <div class="form-row" style="margin: 0px;margin-right: 0px;padding: 5px;">
+                                                        <div class="col-lg-12">
+                                                            <div class="form-row p-3">
+                                                                <div class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-4 align-self-center p-1 m-0 mx-auto shadow">
+                                                                    <div class="form-row p-0 m-0 mx-auto bg-white">
+                                                                        <div class="col p-2 m-0">
+                                                                            <div class="form-row p-0 m-0">
+                                                                                <div class="col p-0 m-0">
+                                                                                    <div class="form-row p-0 m-0">
+                                                                                        <div class="col-4 col-sm-3 col-md-4 col-lg-4"><img class="rounded-circle img-fluid" src="BN6Wq_5f.jpg" /></div>
+                                                                                        <div class="checkbox"><label><input type="checkbox" /><span class="checkbox-material"><span class="check"></span></span> Picking Plan
+
+                                                                                            </label></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-4 align-self-center p-1 m-0 mx-auto shadow">
+                                                                    <div class="form-row p-0 m-0 mx-auto bg-white">
+                                                                        <div class="col p-2 m-0">
+                                                                            <div class="form-row p-0 m-0">
+                                                                                <div class="col p-0 m-0">
+                                                                                    <div class="form-row p-0 m-0">
+                                                                                        <div class="col-4 col-sm-3 col-md-4 col-lg-4"><img class="rounded-circle img-fluid" src="mina_main_1.png" /></div>
+                                                                                        <div class="col-8 col-sm-8 col-lg-8 align-self-center p-0 m-0">
+                                                                                            <div class="checkbox"><label><input type="checkbox" /><span class="checkbox-material"><span class="check"></span></span> Picking List
+
+
+                                                                                                </label></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-4 align-self-center p-1 m-0 mx-auto shadow">
+                                                                    <div class="form-row p-0 m-0 mx-auto bg-white">
+                                                                        <div class="col p-2 m-0">
+                                                                            <div class="form-row p-0 m-0">
+                                                                                <div class="col p-0 m-0">
+                                                                                    <div class="form-row p-0 m-0">
+                                                                                        <div class="col-4 col-sm-3 col-md-4 col-lg-4"><img class="rounded-circle img-fluid" src="default.png" /></div>
+                                                                                        <div class="col-8 col-sm-8 col-lg-8 align-self-center p-0 m-0">
+                                                                                            <div class="checkbox"><label><input type="checkbox" /><span class="checkbox-material"><span class="check"></span></span> Setting
+
+                                                                                                </label></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row" style="margin: 0px;margin-right: 0px;padding: 5px;">
+                                                        <div class="col-lg-12">
+                                                            <div class="form-row p-3">
+                                                                <div class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-4 align-self-center p-1 m-0 mx-auto shadow">
+                                                                    <div class="form-row p-0 m-0 mx-auto bg-white">
+                                                                        <div class="col p-2 m-0">
+                                                                            <div class="form-row p-0 m-0">
+                                                                                <div class="col p-0 m-0">
+                                                                                    <div class="form-row p-0 m-0">
+                                                                                        <div class="col-4 col-sm-3 col-md-4 col-lg-4"><img class="rounded-circle img-fluid" src="default.png" /></div>
+                                                                                        <div class="col-8 col-sm-8 col-lg-8 align-self-center p-0 m-0">
+                                                                                            <div class="checkbox"><label><input type="checkbox" /><span class="checkbox-material"><span class="check"></span></span> Master Client
+
+
+                                                                                                </label></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-4 align-self-center p-1 m-0 mx-auto shadow">
+                                                                    <div class="form-row p-0 m-0 mx-auto bg-white">
+                                                                        <div class="col p-2 m-0">
+                                                                            <div class="form-row p-0 m-0">
+                                                                                <div class="col p-0 m-0">
+                                                                                    <div class="form-row p-0 m-0">
+                                                                                        <div class="col-4 col-sm-3 col-md-4 col-lg-4"><img class="rounded-circle img-fluid" src="default.png" /></div>
+                                                                                        <div class="col-8 col-sm-8 col-lg-8 align-self-center p-0 m-0">
+                                                                                            <div class="checkbox"><label><input type="checkbox" /><span class="checkbox-material"><span class="check"></span></span> Master Employee
+
+                                                                                                </label></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-4 align-self-center p-1 m-0 mx-auto shadow">
+                                                                    <div class="form-row p-0 m-0 mx-auto bg-white">
+                                                                        <div class="col p-2 m-0">
+                                                                            <div class="form-row p-0 m-0">
+                                                                                <div class="col p-0 m-0">
+                                                                                    <div class="form-row p-0 m-0">
+                                                                                        <div class="col-4 col-sm-3 col-md-4 col-lg-4"><img class="rounded-circle img-fluid" src="default.png" /></div>
+                                                                                        <div class="col-8 col-sm-8 col-lg-8 align-self-center p-0 m-0">
+                                                                                            <div class="checkbox"><label><input type="checkbox" /><span class="checkbox-material"><span class="check"></span></span> Setting
+
+                                                                                                </label></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+</body>
+
+</html>
