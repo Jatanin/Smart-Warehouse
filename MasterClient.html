@@ -1,0 +1,253 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>JectFinal</title>
+</head>
+
+<body id="page-top">
+    <div id="contentWrapper">
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navbar--apple">
+            <div class="container"><button class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><i class="la la-navicon"></i></span></button>
+                <div id="menu" class="collapse navbar-collapse"></div><span id="username" class="float-right">Username</span><a class="btn btn-info btn-sm float-right mx-2" role="button" href="Login.html"><i class="fa fa-sign-out mr-1"></i><span class="d-none d-lg-inline d-xl-inline">Log out</span></a><i id="icon-search" class="icon ion-ios-search-strong"></i><input id="currentDateTime" class="d-none float-right d-md-flex" type="text" readonly style="text-align: center;margin-top: 0px;width: auto;" disabled />
+                <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navbar--apple">
+                    <div class="container"><button class="navbar-toggler" data-toggle="collapse"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><i class="la la-navicon"></i></span></button>
+                        <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navbar--apple" style="margin-bottom: -65px;padding-bottom: 0px;">
+                            <div class="container"><button class="navbar-toggler" data-toggle="collapse" data-target="#menu-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><i class="la la-navicon"></i></span></button>
+                                <div id="menu-1" class="collapse navbar-collapse">
+                                    <ul class="navbar-nav flex-grow-1 justify-content-between">
+                                        <li class="nav-item d-none d-xs-block d-md-block"><a class="nav-link" href="index.html"><i class="fa fa-cubes apple-logo" href="index.html"></i></a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home mr-2"></i>Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="PickingPlan.html"><i class="fa fa-th-list mr-2" style="font-size: 14px;"></i>Picking Plan</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="PickingList.html"><i class="fa fa-th-list mr-2"></i>Picking List</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="UserSetting.html"><i class="fa fa-cogs mr-2"></i>Setting</a></li>
+                                        <li class="nav-item d-none d-xs-block d-md-block"><a class="nav-link" href="#"><i class="icon ion-ios-search-strong"></i></a></li>
+                                        <li class="nav-item dropdown" style="margin-right: 64px;"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#" style="margin-right: 190px;"><i class="fa fa-user-circle mr-2"></i>Master</a>
+                                            <div class="dropdown-menu"><a id="dropdown-client-1" class="dropdown-item" href="MasterClient.html">MasterClient</a><a id="dropdown-client-2" class="dropdown-item" href="MasterEmployee.html">MasterEmployee</a><a id="dropdown-client-3" class="dropdown-item" href="MasterProducts.html">MasterItems</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row" style="margin: 0px;margin-right: 0px;padding: 5px;">
+                                    <div class="col"><button id="btn-logout" class="btn btn-primary" type="button" style="margin-top: -9px;margin-left: -10px;margin-right: -50px;"><i class="fa fa-sign-out"></i>Log Out</button></div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+        <div id="collapsePlanSelect" class="shadow" style="background: rgba(46,48,137,255);border-radius: 9px;padding: 5px;padding-bottom: 5px;padding-top: 50px;margin-top: 59px;"><a id="btn-master" class="btn btn-info" data-toggle="collapse" aria-expanded="true" aria-controls="contentPlanSelect" href="#contentPlanSelect" role="button" style="margin-left: 19px;margin-bottom: -3px;margin-top: -45px;">Master Clients</a>
+            <div id="contentPlanSelect" class="collapse show">
+                <div class="card mb-3 shadow" style="min-height: 75vh;margin-top: 6px;">
+                    <div id="card-table" class="card-body" style="margin-top: 32px;">
+                        <h4><i class="fa fa-user-circle-o mx-3"></i>MasterClients</h4>
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div id="modalMasterClient" class="modal fade" role="dialog" tabindex="-1">
+                                        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <form>
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Master Clients</h4><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="form-group">
+                                                            <div class="form-row">
+                                                                <div class="col-2 text-right"><label class="col-form-label text-nowrap"><span style="color: rgb(0, 0, 0);">Clients ID</span><br /></label></div>
+                                                                <div class="col-4"><input class="form-control" type="text" readonly value="A1234" /></div>
+                                                                <div class="col-2 text-right"><label class="col-form-label text-nowrap"><span style="color: rgb(0, 0, 0);">Client Name</span></label></div>
+                                                                <div class="col"><input class="form-control" type="text" value /></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="form-row">
+                                                                <div class="col-2 text-right"><label class="col-form-label text-nowrap"><span class="text-danger"></span><span style="color: rgb(0, 0, 0);">Company</span></label></div>
+                                                                <div class="col-4"><input class="form-control" type="text" required placeholder="Company Name" /></div>
+                                                                <div class="col-2 text-right"><label class="col-form-label text-nowrap"><span style="color: rgb(0, 0, 0);">Tel.</span></label></div>
+                                                                <div class="col-4"><input class="form-control" type="tel" value placeholder="Client Phone NO." /></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="form-row">
+                                                                <div class="col-2 text-right"><label class="col-form-label text-nowrap"><span style="color: rgb(0, 0, 0);">Email</span></label></div>
+                                                                <div class="col-4"><input class="form-control" type="email" required placeholder="Company Name" /></div>
+                                                                <div class="col-2 text-right"><label class="col-form-label text-nowrap"><span style="color: rgb(0, 0, 0);">Note</span></label></div>
+                                                                <div class="col-4"><textarea class="form-control"></textarea></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="form-row">
+                                                                <div class="col">
+                                                                    <div class="form-group">
+                                                                        <div class="form-row">
+                                                                            <div class="col-2 text-right"><label class="col-form-label text-nowrap"><span style="color: rgb(1, 1, 1);">QR Code</span></label></div>
+                                                                            <div class="col-4"><input class="form-control-file" type="file" /></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <section>
+                                                            <div class="card shadow">
+                                                                <div class="card-body">
+                                                                    <h4>Product Info</h4>
+                                                                    <div class="form-group">
+                                                                        <div class="form-row">
+                                                                            <div class="col-1 text-right"><label class="col-form-label text-nowrap"><span style="color: rgb(0, 0, 0);">Product ID</span><br /></label></div>
+                                                                            <div class="col-4 align-self-center"><input class="form-control" type="text" style="margin-left: 23px;" readonly /></div>
+                                                                            <div class="col" style="margin-left: 150px;"><button id="btn-pro-info" class="btn btn-info btn-sm" type="button" style="padding-top: 2px;margin-bottom: 5px;margin-left: 413px;"><strong>Add </strong></button></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="table-responsive table mt-2" style="font-size: 13px;">
+                                                                        <table id="tbUserList" class="table table-striped table-hover table-sm my-0 display">
+                                                                            <thead style="background: rgb(226,252,255);">
+                                                                                <tr class="text-center">
+                                                                                    <th>Product ID</th>
+                                                                                    <th>Product Name</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody class="text-center">
+                                                                                <tr>
+                                                                                    <td>0000001</td>
+                                                                                    <td>A</td>
+                                                                                    <td class="p-1"><button class="btn btn-danger btn-sm p-1" type="button"><i class="fa fa-remove"></i>Delete</button></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>0000005</td>
+                                                                                    <td>C</td>
+                                                                                    <td class="p-1"><button class="btn btn-danger btn-sm p-1" type="button"><i class="fa fa-remove"></i>Delete</button></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>0000003</td>
+                                                                                    <td>C</td>
+                                                                                    <td class="p-1"><button class="btn btn-danger btn-sm p-1" type="button"><i class="fa fa-remove"></i>Delete</button></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>0000004</td>
+                                                                                    <td>D</td>
+                                                                                    <td class="p-1"><button class="btn btn-danger btn-sm p-1" type="button"><i class="fa fa-remove"></i>Delete</button></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>0000008</td>
+                                                                                    <td>E</td>
+                                                                                    <td class="p-1"><button class="btn btn-danger btn-sm p-1" type="button"><i class="fa fa-remove"></i>Delete</button></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button class="btn btn-primary" type="submit">Save</button></div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div><a id="btn-add" class="btn btn-primary btn-lg btn btn-primaryf float-right" role="button" data-toggle="modal" href="#modalMasterClient">Add Clients</a>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="table-responsive table mt-2" style="font-size: 13px;">
+                                        <table id="tbUserList" class="table table-striped table-hover table-bordered table-sm my-0 display">
+                                            <thead style="background: rgb(226,252,255);">
+                                                <tr class="text-center">
+                                                    <th class="table-head">ID</th>
+                                                    <th class="table-head">Client Name</th>
+                                                    <th class="table-head">Company</th>
+                                                    <th class="table-head">Tel</th>
+                                                    <th class="table-head">Email</th>
+                                                    <th class="table-head">Note</th>
+                                                    <th class="table-head">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-center">
+                                                <tr>
+                                                    <td>0000001</td>
+                                                    <td>Client A</td>
+                                                    <td>A Company</td>
+                                                    <td>09xxxxxxxx</td>
+                                                    <td>AAA01</td>
+                                                    <td class="p-1">Big one</td>
+                                                    <td class="p-1">
+                                                        <section>
+                                                            <div class="container">
+                                                                <div class="form-row" style="margin-right: -9px;">
+                                                                    <div class="col-md-6"><button class="btn btn-danger text-nowrap p-1" type="button" style="font-size: 13px;"><i class="fa fa-remove m-1"></i>DEL</button></div>
+                                                                    <div class="col-md-6"><button class="btn btn-info text-nowrap p-1 mr-1" data-toggle="modal" data-target="#modalMasterClient" type="button" style="font-size: 13px;"><i class="fa fa-pencil-square-o m-1"></i>EDIT</button></div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>0000002</td>
+                                                    <td>Client B</td>
+                                                    <td>B Company<br /></td>
+                                                    <td>09xxxxxxxx</td>
+                                                    <td>AAA01</td>
+                                                    <td class="p-1">small</td>
+                                                    <td class="p-1">
+                                                        <section>
+                                                            <div class="container">
+                                                                <div class="form-row">
+                                                                    <div class="col-md-6"><button class="btn btn-danger text-nowrap p-1" type="button" style="font-size: 13px;"><i class="fa fa-remove m-1"></i>DEL</button></div>
+                                                                    <div class="col"><button class="btn btn-info text-nowrap p-1 mr-1" data-toggle="modal" data-target="#modalMasterClient" type="button" style="font-size: 13px;"><i class="fa fa-pencil-square-o m-1"></i>EDIT</button></div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>0000003</td>
+                                                    <td>Client C</td>
+                                                    <td>C Company<br /></td>
+                                                    <td>09xxxxxxxx</td>
+                                                    <td>AAA01</td>
+                                                    <td class="p-1">daily</td>
+                                                    <td class="p-1">
+                                                        <section>
+                                                            <div class="container">
+                                                                <div class="form-row">
+                                                                    <div class="col-md-6"><button class="btn btn-danger text-nowrap p-1" type="button" style="font-size: 13px;"><i class="fa fa-remove m-1"></i>DEL</button></div>
+                                                                    <div class="col"><button class="btn btn-info text-nowrap p-1 mr-1" data-toggle="modal" data-target="#modalMasterClient" type="button" style="font-size: 13px;"><i class="fa fa-pencil-square-o m-1"></i>EDIT</button></div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>0000004</td>
+                                                    <td>Client D</td>
+                                                    <td>D Company<br /></td>
+                                                    <td>09xxxxxxxx</td>
+                                                    <td>AAA01</td>
+                                                    <td class="p-1">yeah</td>
+                                                    <td class="p-1">
+                                                        <section>
+                                                            <div class="container">
+                                                                <div class="form-row">
+                                                                    <div class="col-md-6"><button class="btn btn-danger text-nowrap p-1" type="button" style="font-size: 13px;"><i class="fa fa-remove m-1"></i>DEL</button></div>
+                                                                    <div class="col-md-6"><button class="btn btn-info text-nowrap p-1 mr-1" data-toggle="modal" data-target="#modalMasterClient" type="button" style="font-size: 13px;"><i class="fa fa-pencil-square-o m-1"></i>EDIT</button></div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+</body>
+
+</html>
