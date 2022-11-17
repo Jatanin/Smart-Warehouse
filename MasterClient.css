@@ -34,6 +34,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #27b89b;
 }
 
+.fa.fa-truck {
+  color: var(--yellow);
+}
+
+.fa.fa-calendar-times-o {
+  color: white;
+}
+
+.btn-data {
+  background: rgba(47,47,137,255);
+}
+
+
+
 .ml-3, .mx-3 {
   margin-left: 1rem!important;
 }
@@ -277,8 +291,6 @@ table {
   border-radius: 10px;
 }
 
-.btn {
-}
 
 .text-nowrap {
   white-space: nowrap!important;
