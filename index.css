@@ -1,6 +1,127 @@
 element.style {
-  @import url('https: //fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;
-  1,900&family=Ubuntu: ital,wght@0,300;
+  margin-bottom: -2px;
+  padding-bottom: 0px;
+}
+
+nav.navbar.navbar-dark.navbar-expand-md.fixed-top.bg-dark.navbar--apple {
+  background-color: #2f2f88;
+}
+
+@media (min-width: 768px) {
+  .navbar--apple::before {
+    height: 50px !important;
+    background-color: #2f2f88;
+  }
+}
+
+.navbar--apple::before {
+  background: rgb(48,50,135,0.99);
+  transition: height 0.2s ease-in;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  z-index: -1;
+  border-bottom: 1px solid white;
+}
+
+@media (min-width: 768px) {
+  .navbar--apple::before {
+    height: 50px !important;
+  }
+}
+
+.navbar--apple::before {
+  background: #2f2f88;
+  transition: height 0.2s ease-in;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  z-index: -1;
+}
+
+.navbar--apple {
+  /*background-color: initial !important;*/
+  justify-content: space-evenly;
+  font-family: 'Kanit', sans-serif;
+  background-color: #2f2f88;
+}
+
+.bg-dark {
+  background-color: #2f2f88;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+
+
+@media (min-width:768px) {
+  .navbar-expand-md {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+#content {
+  justify-content: space-between;
+  background-color: rgba(47,47,137,255);
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  text-align: left;
+  background-color: rgba(46,48,136,255);
+  margin-top: 10px;
+  border-radius: 40px;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Kanit', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
 }
 
 :root {
@@ -45,12 +166,10 @@ html {
   background-color: #2f2f89;
   font-family: font-family: 'Ubuntu', sans-serif;
   font-family: 'Ubuntu', sans-serif;
-}
-
-html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
+
 
