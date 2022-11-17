@@ -1,0 +1,9 @@
+//เหมือนหน้า Master อื่นๆแทบทุกอย่าง//
+#btn-master {
+  justify-content: flex-start;
+  margin-top: 50px;
+  margin-left: 0;
+  margin-bottom: 10px;
+  width: 7;
+}
+
