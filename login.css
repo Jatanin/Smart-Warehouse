@@ -86,3 +86,166 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+#buttonLogin {
+  color: black;
+  background-color: rgba(251,229,110,0.95);
+  border-radius: 1.25rem;
+  border: solid 1px;
+  border-color: #292a29;
+}
+
+.btn-info:not(:disabled):not(.disabled).active:focus, .btn-info:not(:disabled):not(.disabled):active:focus, .show > .btn-info.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(251, 229, 109);
+}
+
+.btn-info:not(:disabled):not(.disabled).active:focus, .btn-info:not(:disabled):not(.disabled):active:focus, .show > .btn-info.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(58,176,195,.5);
+}
+
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(251,229,109,255);
+  border-color: rgba(251,229,109,255);
+}
+
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(251,229,109,255);
+  border-color: rgba(251,229,109,255);
+}
+
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #117a8b;
+  border-color: #10707f;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn-info.focus, .btn-info:focus {
+  color: black;
+  background-color: rgba(251,229,109,255);
+  border-color: rgba(251,229,109,255);
+  box-shadow: 0 0 0 .2rem rgba(251,229,109,255);
+}
+
+.btn-info:hover {
+  color: black;
+  background-color: #fbe56d;
+  border-color: #fbe56d;
+}
+
+.btn-info.focus, .btn-info:focus {
+  color: #fff;
+  background-color: #138496;
+  border-color: #117a8b;
+  box-shadow: 0 0 0 .2rem rgba(58,176,195,.5);
+}
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #138496;
+  border-color: #117a8b;
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+.btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+a:hover {
+  /*color: #224abe;*/
+  /*text-decoration: underline;*/
+}
+
+a:focus {
+  outline: none;
+}
+
+a:hover {
+  color: rgb(132,136,182);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.btn-info {
+  background-color: rgba(251,229,109,255);
+  color: black;
+  position: absolute;
+  left: 00px;
+  /*top: 200px;*/
+}
+
+.w-100 {
+  width: 100%!important;
+}
+
+.float-right {
+  float: right!important;
+}
+
+.btn-group-sm > .btn, .btn-sm {
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+a {
+  color: rgb(100,116,178);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a {
+  background-color: rgb(100,116,178);
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+
