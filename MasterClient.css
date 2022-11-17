@@ -30,8 +30,28 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
-div {
+.fa.fa-check-circle-o {
+  color: #27b89b;
 }
+
+.ml-3, .mx-3 {
+  margin-left: 1rem!important;
+}
+
+.mr-3, .mx-3 {
+  margin-right: 1rem!important;
+}
+
+.table-hover tbody tr:hover {
+  color: #212529;
+  background-color: rgba(0,0,0,.075);
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+
 
 body {
   margin: 0;
